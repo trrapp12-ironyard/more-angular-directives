@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="moreDirectivesApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>More Angular Directives</title>
+  </head>
+  <body>
+    <h1>More Angular Directives</h1>
+
+    <div ng-controller="IfShowHideCtrl as ishCtrl">
+      <h2>ng-if, ng-show, ng-hide</h2>
+      <input type="checkbox" ng-model="ishCtrl.checked">
+      <p ng-if="ishCtrl.checked">
+        ctrl.checked is checked so ng-show is true
+      </p>
+      <p ng-show="ishCtrl.checked">
+        ctrl.checked is checked os ng-show is true
+      </p>
+      <p ng-hide="ishCtrl.checked">
+        ctrl.checked is checked os ng-show is true
+      </p>
+    </div>
+
+  </body>
+</html>
